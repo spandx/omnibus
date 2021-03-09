@@ -12,4 +12,5 @@ use_git_caching true
 # fetcher_read_timeout 120
 # fetcher_retries 5
 
+append_timestamp false
 software_gems ['omnibus-software']
