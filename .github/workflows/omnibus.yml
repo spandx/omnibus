@@ -16,4 +16,4 @@ jobs:
       - run: bundle exec omnibus build spandx
       - uses: actions/upload-artifact@v2
         with:
-          path: "$GITHUB_WORKSPACE/spandx"
+          path: "/Users/runner/work/omnibus/omnibus/spandx"
