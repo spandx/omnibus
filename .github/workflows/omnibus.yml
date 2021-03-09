@@ -5,7 +5,7 @@ on:
   pull_request:
     branches: [main]
 jobs:
-  deb:
+  pkg:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
