@@ -9,9 +9,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          lfs: true
-          submodules: recursive
       - uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.0'
