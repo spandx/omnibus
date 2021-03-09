@@ -1,9 +1,7 @@
 name "spandx"
-maintainer "CHANGE ME"
-homepage "https://CHANGE-ME.com"
+maintainer "mo khan <mo@mokhan.ca>"
+homepage "https://github.com/spandx"
 
-# Defaults to C:/spandx on Windows
-# and /opt/spandx on all other platforms
 install_dir "#{default_root}/#{name}"
 
 build_version Omnibus::BuildVersion.semver

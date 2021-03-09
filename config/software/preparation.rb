@@ -9,11 +9,14 @@ dependency "spandx-ruby"
 
 build do
   block do
-    touch "#{install_dir}/embedded/lib/.keep"
-    touch "#{install_dir}/embedded/bin/.keep"
-    touch "#{install_dir}/bin/.keep"
+    command "mkdir -p #{install_dir}/bin"
+    command "mkdir -p #{install_dir}/embedded/bin"
+    command "mkdir -p #{install_dir}/embedded/lib"
 
     env = with_standard_compiler_flags(with_embedded_path)
     gem "install spandx --platform=ruby", env: env
+    copy "#{install_dir}/embedded/bin/spandx", "#{install_dir}/bin/spandx"
+
+    delete "#{install_dir}/embedded/share"
   end
 end
