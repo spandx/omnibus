@@ -6,5 +6,6 @@ vendor/bundle
 pkg/*
 .vagrant
 bin/*
+tmp/*
 files/**/cache/
 vendor/cookbooks

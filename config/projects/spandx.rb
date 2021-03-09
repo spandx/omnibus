@@ -1,9 +1,3 @@
-#
-# Copyright 2021 YOUR NAME
-#
-# All Rights Reserved.
-#
-
 name "spandx"
 maintainer "CHANGE ME"
 homepage "https://CHANGE-ME.com"
