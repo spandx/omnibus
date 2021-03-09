@@ -16,5 +16,5 @@ jobs:
         with:
           ruby-version: '3.0'
           bundler-cache: true
-      - run: ./bin/setup
+      - run: bundle install
       - run: bundle exec omnibus build spandx
