@@ -13,6 +13,7 @@ build do
     touch "#{install_dir}/embedded/bin/.keep"
     touch "#{install_dir}/bin/.keep"
 
-    gem "install spandx --no-document"
+    env = with_standard_compiler_flags(with_embedded_path)
+    gem "install spandx --no-document", env: env
   end
 end
