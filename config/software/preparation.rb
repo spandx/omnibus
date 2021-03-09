@@ -14,6 +14,6 @@ build do
     touch "#{install_dir}/bin/.keep"
 
     env = with_standard_compiler_flags(with_embedded_path)
-    gem "install spandx --no-document", env: env
+    gem "install spandx --platform=ruby", env: env
   end
 end
