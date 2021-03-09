@@ -6,7 +6,7 @@ build_dir     './tmp/omnibus/build'
 package_dir   './tmp/omnibus/pkg'
 package_tmp   './tmp/omnibus/pkg-tmp'
 
-use_git_caching false
+use_git_caching true
 
 # build_retries 5
 # fetcher_read_timeout 120
