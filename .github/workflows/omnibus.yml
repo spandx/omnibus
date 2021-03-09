@@ -14,3 +14,6 @@ jobs:
           ruby-version: '2.7'
           bundler-cache: true
       - run: bundle exec omnibus build spandx
+      - uses: actions/upload-artifact@v2
+        with:
+          path: "$GITHUB_WORKSPACE/spandx"
